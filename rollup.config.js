@@ -54,7 +54,7 @@ entryPoints.forEach((entry) => {
   entries[entry.replace(/^Sources[/\\]/, '')] = entry;
 });
 
-const outputDir = path.resolve('dist', 'esm');
+const outputDir = path.resolve('@kitware', 'vtk.js');
 
 const dependencies = Object.keys(pkgJSON.dependencies || []);
 const peerDependencies = Object.keys(pkgJSON.peerDependencies || []);
