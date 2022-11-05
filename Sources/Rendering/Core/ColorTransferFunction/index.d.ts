@@ -5,6 +5,7 @@ import { ColorSpace, Scale } from "./Constants";
 
 /* TODO: use VtkScalarsToColors instead of VtkObject */
 export interface vtkColorTransferFunction extends vtkObject {
+  getRange(): Range; // TODO until VtkScalarsToColors is used, this is required.
   /**
    * Add a point defined in RGB
    * @param {Number} x The index of the point.
